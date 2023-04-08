@@ -95,7 +95,7 @@ import {
         
         <ScrollView style={styles.listcontainer}>
           {filteredData.map((item, index) => (
-            <ListItem bottomDivider>
+            <ListItem bottomDivider key={index}>
               <Avatar
                 rounded
                 source={{ uri: item.image }}

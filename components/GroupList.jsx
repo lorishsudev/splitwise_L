@@ -25,7 +25,7 @@ const GroupList = (pros) => {
   return (
     <View>
       {group.map((item, index) => (
-        <Card>
+        <Card key={index}>
           <View style={styles.groupCard}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
               <Image
